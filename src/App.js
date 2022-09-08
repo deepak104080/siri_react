@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Home from './Home';
+import About from './About';
 
 function App() {
 
@@ -13,6 +15,10 @@ function App() {
         <h4>No of students in Siri - </h4>
         <h4>{sum}</h4>
         <h4>{num1 + num2}</h4>
+
+        <Home />
+        
+        <About />
       </div>
   );
 }
