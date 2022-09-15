@@ -5,6 +5,7 @@ import Menubar from "./Menubar";
 import Sidebar from "./Sidebar";
 import Content from "./Content";
 import Footer from "./Footer";
+import CounterFunctional from "./CounterFunctional";
 
 const Root = () => {
     const liveScore = {
@@ -26,9 +27,13 @@ const Root = () => {
                     <Content score = {liveScore} abc={5} def = "liuwaegfw"/>
                 </div>
                <Footer />
+               <CounterFunctional />
             </div>
         </>
     )
 }
 
 export default Root;
+
+
+//DOM, locaStorage, Global Variable
