@@ -6,6 +6,7 @@ import Sidebar from "./Sidebar";
 import Content from "./Content";
 import Footer from "./Footer";
 import CounterFunctional from "./CounterFunctional";
+import ShowHide from './ShowHide';
 
 const Root = () => {
     const liveScore = {
@@ -28,6 +29,7 @@ const Root = () => {
                 </div>
                <Footer />
                <CounterFunctional />
+               <ShowHide />
             </div>
         </>
     )
@@ -37,3 +39,7 @@ export default Root;
 
 
 //DOM, locaStorage, Global Variable
+
+//Deep copy vs Shallow copy - deep comparison vs shallow comparison
+
+//Async JS - Event Loop, Global Execution Context
