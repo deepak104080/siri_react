@@ -1,5 +1,5 @@
 import React from "react";
-import '../bootstrap.css';
+// import '../bootstrap.css';
 import Header from "./Header";
 import Menubar from "./Menubar";
 import Sidebar from "./Sidebar";
@@ -30,10 +30,10 @@ const Root = () => {
                     <Content score = {liveScore} abc={5} def = "liuwaegfw"/>
                 </div>
                 <Footer />
-                <CounterFunctional />
+                {/* <CounterFunctional />
                 <ShowHide />
                 <Loop />
-                <Input />
+                <Input /> */}
             </div>
         </>
     )

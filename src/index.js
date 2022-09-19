@@ -4,8 +4,10 @@ import App from './App';
 import Root from './theme/Root';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Root />);
+root.render(<App />);
 
+
+// ReactDOM.render(<Root/>, document.getElementById('root'));
 
 
 // ./ - same location

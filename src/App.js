@@ -1,25 +1,55 @@
 import React from 'react';
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import Header from './common/Header';
+import Footer from './common/Footer';
+// import Sidebar from './common/Sidebar';
+import Navbar from './common/Navbar';
+
 import Home from './Home';
 import About from './About';
+import Root from './theme/Root';
+import NotFound from './NotFound';
+import CounterFunctional from './theme/CounterFunctional';
+import ShowHide from './theme/ShowHide';
+import Loop from './theme/Loop';
+import Input from './theme/Input';
 
 function App() {
 
-  const num1 = 50;
-  const num2 = 100;
-  const sum = num1 + num2;
-
   return (
-      <div className="App">
-        <h1>Newton School</h1>
-        <h4>No of students in Siri - </h4>
-        <h4>{sum}</h4>
-        <h4>{num1 + num2}</h4>
-
-        <Home />
+    <BrowserRouter>
+      <div className="container">
+        <Header/>
+        <Navbar />
+        {/* <Sidebar/> */}
         
-        <About />
+        
+        <Routes>
+          <Route path='/home' element={<Home />}/>
+          <Route path='/about' element={<About />}/>
+          <Route path='/root' element={<Root />}/>
+          <Route path='/counterfn' element={<CounterFunctional />}/>
+          <Route path='/showhide' element={<ShowHide />}/>
+          <Route path='/loop' element={<Loop />}/>
+          <Route path='/input' element={<Input />}/>
+          {/* pass data through url */}
+
+
+
+
+
+
+          <Route path='/' element={<Root />}/>
+          <Route path='/*' element={<NotFound />}/>
+
+        </Routes>
+        <Footer/>
+
       </div>
+    </BrowserRouter>   
   );
 }
 
