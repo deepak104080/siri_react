@@ -34,3 +34,8 @@ Event Loop - https://miro.medium.com/max/1400/1*iHhUyO4DliDwa6x_cO5E3A.gif
 
 
 Props and State
+
+transfer data - store and update
+parent child component - intra component
+cant' update/read only/immutable - can update/read-write/mutable
+--XX--both type of comp - only class comp --xx--

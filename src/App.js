@@ -16,6 +16,8 @@ import CounterFunctional from './theme/CounterFunctional';
 import ShowHide from './theme/ShowHide';
 import Loop from './theme/Loop';
 import Input from './theme/Input';
+import Form from './comp/Form';
+import FormValidation from './comp/FormValidation';
 
 function App() {
 
@@ -35,6 +37,8 @@ function App() {
           <Route path='/showhide' element={<ShowHide />}/>
           <Route path='/loop' element={<Loop />}/>
           <Route path='/input' element={<Input />}/>
+          <Route path='/form' element={<Form />}/>
+          <Route path='/formvalidation' element={<FormValidation />}/>
           {/* pass data through url */}
 
 

@@ -5,8 +5,11 @@ const Input = () => {
 
     const addInArray = (event) => {
         console.log(event.target.value);
-        setArray([...array, event.target.value]);
+        setArray([...array, event.target.value]); //array.push
     }
+
+
+    
     
     return (
         <>
@@ -22,7 +25,19 @@ const Input = () => {
                     </ul>
 
                     Enter your input: <input type="text" onBlur={addInArray} />
-                    <button>Add in List</button>
+                    
+                    <br></br><br></br><br></br><br></br>
+
+
+
+
+
+
+
+
+
+                    
+
 
                 </div>
             </div>
@@ -36,3 +51,4 @@ export default Input;
 // HW
 // Background color from user
 // To Do App
+// event object
