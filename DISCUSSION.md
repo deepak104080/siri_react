@@ -39,3 +39,4 @@ transfer data - store and update
 parent child component - intra component
 cant' update/read only/immutable - can update/read-write/mutable
 --XX--both type of comp - only class comp --xx--
+

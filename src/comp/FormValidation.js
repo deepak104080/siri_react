@@ -2,20 +2,22 @@ import React, { useState } from 'react'
 
 const FormValidation = () => {
 
-    const initialObj = {};
+    // const initialObj = {};
     // const initialObj2 = {
-    //     name: '',
-    //     age: '',
-    //     city: '',
-    //     country: ''
+    //     name: 'deepak',
+    //     age: '111',
+    //     city: 'delhi',
+    //     country: 'india'
     // };
 
-    const [formData, setFormData] = useState(initialObj);
+    const [formData, setFormData] = useState({});
 
     const addInputValue = (event) =>{
-        console.log(event.target.name, event.target.value);
+        console.log(event.target.id, event.target.value);
         let tempObj = {}
-        tempObj[event.target.name] = event.target.value;
+        // formData.name = 'deepak';
+        // formData.age = '111';
+        tempObj[event.target.id] = event.target.value;
         console.log(tempObj);
         setFormData({...formData, ...tempObj}); //async mode
         // console.log(formData); - old value
@@ -24,18 +26,19 @@ const FormValidation = () => {
     const registerFunction = () => {
         console.log('Form Data');
         console.log(formData);
+        //api call to send form data to back end/database/third party
     }
 
     return (
         <div className="row bg-warning bg-opacity-50">
             <div className="col-12">
-                Name - <input type="text" name="name" onBlur={addInputValue}/>
+                Name - <input type="text" id="name" onBlur={addInputValue}/>
                 <br></br>
-                Age - <input type="text" name="age" onBlur={addInputValue}/>
+                Age - <input type="text" id="age" onBlur={addInputValue}/>
                 <br></br>
-                City - <input type="text" name="city" onBlur={addInputValue}/>
+                City - <input type="text" id="city" onBlur={addInputValue}/>
                 <br></br>
-                Country - <input type="text" name="country" onBlur={addInputValue}/>
+                Country - <input type="text" id="country" onBlur={addInputValue}/>
                 <br></br>
                 <button onClick={registerFunction}>Register on Newton School</button>
                 <br></br><br></br>

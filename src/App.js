@@ -18,6 +18,7 @@ import Loop from './theme/Loop';
 import Input from './theme/Input';
 import Form from './comp/Form';
 import FormValidation from './comp/FormValidation';
+import ClassComp from './ClassComp';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
           <Route path='/input' element={<Input />}/>
           <Route path='/form' element={<Form />}/>
           <Route path='/formvalidation' element={<FormValidation />}/>
+          <Route path='/classcomp' element={<ClassComp />}/>
           {/* pass data through url */}
 
 
