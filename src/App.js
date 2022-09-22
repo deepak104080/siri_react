@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './style.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Header from './common/Header';
@@ -19,6 +20,7 @@ import Input from './theme/Input';
 import Form from './comp/Form';
 import FormValidation from './comp/FormValidation';
 import ClassComp from './ClassComp';
+import EffectFunctional from './EffectFunctional';
 
 function App() {
 
@@ -41,6 +43,7 @@ function App() {
           <Route path='/form' element={<Form />}/>
           <Route path='/formvalidation' element={<FormValidation />}/>
           <Route path='/classcomp' element={<ClassComp />}/>
+          <Route path='/effectFn' element={<EffectFunctional />}/>
           {/* pass data through url */}
 
 
