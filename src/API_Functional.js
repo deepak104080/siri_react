@@ -25,6 +25,9 @@ const API_Functional = () => {
 export default API_Functional
 
 
+// JsFiddle Link - API Call - https://jsfiddle.net/deepak104080/jnhwpLkg/3/
+
+
 // Async JS
 // Callback Methods
 // Promise

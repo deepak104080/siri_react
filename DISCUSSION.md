@@ -81,3 +81,6 @@ JSON - parsed and stringified
 SOAP (XML)
 
 GRAPHQL
+
+
+JsFiddle Link - API Call - https://jsfiddle.net/deepak104080/jnhwpLkg/3/

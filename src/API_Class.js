@@ -21,3 +21,7 @@ class API_Class extends React.Component {
 }
 
 export default API_Class;
+
+
+// JsFiddle Link - API Call - https://jsfiddle.net/deepak104080/jnhwpLkg/3/
+
