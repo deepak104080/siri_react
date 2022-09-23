@@ -21,6 +21,8 @@ import Form from './comp/Form';
 import FormValidation from './comp/FormValidation';
 import ClassComp from './ClassComp';
 import EffectFunctional from './EffectFunctional';
+import API_Functional from './API_Functional';
+import API_Class from './API_Class';
 
 function App() {
 
@@ -44,6 +46,8 @@ function App() {
           <Route path='/formvalidation' element={<FormValidation />}/>
           <Route path='/classcomp' element={<ClassComp />}/>
           <Route path='/effectFn' element={<EffectFunctional />}/>
+          <Route path='/apifn' element={<API_Functional />}/>
+          <Route path='/apiclass' element={<API_Class />}/>
           {/* pass data through url */}
 
 

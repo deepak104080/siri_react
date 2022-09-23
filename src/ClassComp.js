@@ -42,9 +42,9 @@ class ClassComp extends React.Component {
 
     increaseFn = () => {
         console.log('---------increaseFn');
-        this.state.count = this.state.count + 1;
-        console.log(this.state.count);
-        this.forceUpdate();
+        // this.state.count = this.state.count + 1;
+        // console.log(this.state.count);
+        // this.forceUpdate();
         // this.setState({
         //     count: this.state.count + 1,
         //     show: this.state.show

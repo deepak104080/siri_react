@@ -40,3 +40,44 @@ parent child component - intra component
 cant' update/read only/immutable - can update/read-write/mutable
 --XX--both type of comp - only class comp --xx--
 
+
+
+
+API
+Application Programming Interface
+
+
+
+Front End - (API) - Back End + Database
+Third Party Services
+
+
+JSON (JavaScript Object Notation) - Similar to Object
+
+{
+    name: 'Deepak',
+    age: 1111
+}
+
+{
+    'name': 'Deepak',
+    'age': 1111
+}
+
+
+
+REST API - JSON
+
+NodeJS - 2009 - JavaScript (Browser) - React, Angular, ExpressJS
+
+
+Chrome Extension - JSON Beautifier & Editor
+
+
+JSON - parsed and stringified
+
+
+
+SOAP (XML)
+
+GRAPHQL
