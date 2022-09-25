@@ -27,6 +27,19 @@ const FormValidation = () => {
         console.log('Form Data');
         console.log(formData);
         //api call to send form data to back end/database/third party
+        // fetch('<api url>', {
+        //     method: 'POST',
+        //     body: formData
+        // })
+        // .then((res) => {
+        //     return res.json();
+        // })
+        // .then((finalData) => {
+        //     console.log(finalData);
+        // })
+        // .catch((error) => {
+        //     console.log('failed respnse', error);
+        // })
     }
 
     return (
