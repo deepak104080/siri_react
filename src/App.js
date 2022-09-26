@@ -23,6 +23,7 @@ import ClassComp from './ClassComp';
 import EffectFunctional from './EffectFunctional';
 import API_Functional from './API_Functional';
 import API_Class from './API_Class';
+import UseReducer from './hook/UseReducer';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
           <Route path='/effectFn' element={<EffectFunctional />}/>
           <Route path='/apifn' element={<API_Functional />}/>
           <Route path='/apiclass' element={<API_Class />}/>
+          <Route path='/usereducer' element={<UseReducer />}/>
           {/* pass data through url */}
 
 

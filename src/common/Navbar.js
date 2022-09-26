@@ -19,6 +19,7 @@ const Navbar = () => {
                         <Link to='/effectfn' className="btn btn-warning">EffectFunctional</Link>
                         <Link to='/apifn' className="btn btn-info">API_Functional</Link>
                         <Link to='/apiclass' className="btn btn-primary">API_Class</Link>
+                        <Link to='/usereducer' className="btn btn-secondary">UseReducer</Link>
                         {/* Replace a with Link */}
         </div>
       </div>

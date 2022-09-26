@@ -84,3 +84,13 @@ GRAPHQL
 
 
 JsFiddle Link - API Call - https://jsfiddle.net/deepak104080/jnhwpLkg/3/
+
+
+
+Hooks
+useState - State
+useEffect - Lifecycle
+useContect - Context
+
+
+useReducer - Redux
