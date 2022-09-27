@@ -22,14 +22,14 @@ const Root = () => {
     return (
         <>
             <div className="container">
-                <Header />
-                <Menubar />
+                {/* <Header />
+                <Menubar /> */}
                 <div className="row bg-primary bg-opacity-50">
                     {/* <Sidebar team_first = "India" team_second = "Pakistan"/> */}
                     <Sidebar team_first = {team1} team_second = {team2}/>
                     <Content score = {liveScore} abc={5} def = "liuwaegfw"/>
                 </div>
-                <Footer />
+                {/* <Footer /> */}
                 {/* <CounterFunctional />
                 <ShowHide />
                 <Loop />

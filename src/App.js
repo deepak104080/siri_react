@@ -24,6 +24,9 @@ import EffectFunctional from './EffectFunctional';
 import API_Functional from './API_Functional';
 import API_Class from './API_Class';
 import UseReducer from './hook/UseReducer';
+import LiftState from './comp/LiftState';
+import Parent from './context/Parent';
+import ContextParent from './context/ContextParent';
 
 function App() {
 
@@ -50,6 +53,9 @@ function App() {
           <Route path='/apifn' element={<API_Functional />}/>
           <Route path='/apiclass' element={<API_Class />}/>
           <Route path='/usereducer' element={<UseReducer />}/>
+          <Route path='/liftstate' element={<LiftState />}/>
+          <Route path='/propsdrilling' element={<Parent />}/>
+          <Route path='/context' element={<ContextParent />}/>
           {/* pass data through url */}
 
 

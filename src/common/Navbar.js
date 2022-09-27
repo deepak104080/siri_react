@@ -20,6 +20,9 @@ const Navbar = () => {
                         <Link to='/apifn' className="btn btn-info">API_Functional</Link>
                         <Link to='/apiclass' className="btn btn-primary">API_Class</Link>
                         <Link to='/usereducer' className="btn btn-secondary">UseReducer</Link>
+                        <Link to='/liftstate' className="btn btn-success">LiftState</Link>
+                        <Link to='/propsdrilling' className="btn btn-danger">Props Drilling</Link>
+                        <Link to='/context' className="btn btn-warning">Context</Link>
                         {/* Replace a with Link */}
         </div>
       </div>
