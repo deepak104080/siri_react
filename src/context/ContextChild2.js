@@ -3,6 +3,9 @@ import ContextChild3 from './ContextChild3';
 import { NameContext } from './ContextParent';
 
 class ContextChild2 extends React.Component {
+    componentDidUpdate(){
+        console.log('child 2 re render.')
+    }
     render() {
             return (
                 <div>
@@ -10,7 +13,11 @@ class ContextChild2 extends React.Component {
                     <NameContext.Consumer>
                         {
                             (temp) => (
-                                <div>Country Name - {temp}</div>
+                                <>
+                                <div>Country Name - {temp.name}</div>
+                                <br></br>
+                                <button onClick={() => temp.setCount(temp.count + 1)}>Count Increase</button>
+                                </>
                             )
                         }
                     </NameContext.Consumer>

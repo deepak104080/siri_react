@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
@@ -28,11 +28,27 @@ import LiftState from './comp/LiftState';
 import Parent from './context/Parent';
 import ContextParent from './context/ContextParent';
 
+export const GlobalContext = React.createContext();
+
 function App() {
+
+  const initialObj = {
+    bgColor: '',
+    loginStatus: false,
+    userName: ''
+  }
+
+  const [store, setStore] = useState(initialObj);
+
+  useEffect(() => {
+    console.log(store);
+  })
 
   return (
     <BrowserRouter>
-      <div className="container">
+      <GlobalContext.Provider value={{store, setStore}}>
+        <div className='app-container' style={{background: store.bgColor}}>
+        <div className="container" style={{background: store.bgColor}}>
         <Header/>
         <Navbar />
         {/* <Sidebar/> */}
@@ -70,6 +86,8 @@ function App() {
         <Footer/>
 
       </div>
+      </div>
+      </GlobalContext.Provider>
     </BrowserRouter>   
   );
 }

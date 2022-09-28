@@ -4,7 +4,7 @@ const API_Functional = () => {
     const [products, setProducts] = useState([]);
 
     const callApi = async () => {
-        let response = await fetch('https://fakestoreapi.com/products');
+        let response = await fetch('https://fakestoreapi.com/products').catch(err => console.log(err));
         let finalData = await response.json();
         console.log(finalData);
         setProducts(finalData);

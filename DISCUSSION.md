@@ -94,3 +94,8 @@ useContect - Context
 
 
 useReducer - Redux
+
+
+
+Props Drilling - https://media.geeksforgeeks.org/wp-content/uploads/20210618101141/Untitled.png
+Context - https://www.carlrippon.com/static/0d1f722d0fe4c2bc4c3d71595dbe67dd/2a3d6/prop-drilling-v-context.png
