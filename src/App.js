@@ -27,6 +27,10 @@ import UseReducer from './hook/UseReducer';
 import LiftState from './comp/LiftState';
 import Parent from './context/Parent';
 import ContextParent from './context/ContextParent';
+import CountryList from './comp/CountryList';
+import CountryDetail from './comp/CountryDetail';
+import Login from './comp/Login';
+import Dashboard from './comp/Dashboard';
 
 export const GlobalContext = React.createContext();
 
@@ -72,11 +76,10 @@ function App() {
           <Route path='/liftstate' element={<LiftState />}/>
           <Route path='/propsdrilling' element={<Parent />}/>
           <Route path='/context' element={<ContextParent />}/>
-          {/* pass data through url */}
-
-
-
-
+          <Route path='/countrylist' element={<CountryList />}/>
+          <Route path='/countrydetail/:id' element={<CountryDetail />}/>
+          <Route path='/dashboard' element={<Dashboard />}/>
+          <Route path='/login' element={<Login />}/>
 
 
           <Route path='/' element={<Root />}/>

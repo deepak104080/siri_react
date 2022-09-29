@@ -23,6 +23,8 @@ const Navbar = () => {
                         <Link to='/liftstate' className="btn btn-success">LiftState</Link>
                         <Link to='/propsdrilling' className="btn btn-danger">Props Drilling</Link>
                         <Link to='/context' className="btn btn-warning">Context</Link>
+                        <Link to='/countrylist/' className="btn btn-info">Country</Link>
+                        <Link to='/login/' className="btn btn-primary">Login</Link>
                         {/* Replace a with Link */}
         </div>
       </div>
@@ -31,3 +33,9 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+
+
+// e-commerce
+// blog-site
