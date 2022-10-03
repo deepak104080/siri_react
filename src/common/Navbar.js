@@ -25,6 +25,8 @@ const Navbar = () => {
                         <Link to='/context' className="btn btn-warning">Context</Link>
                         <Link to='/countrylist/' className="btn btn-info">Country</Link>
                         <Link to='/login/' className="btn btn-primary">Login</Link>
+                        <Link to='/country/' className="btn btn-primary">Country</Link>
+                        <Link to='/city/' className="btn btn-primary">City</Link>
                         {/* Replace a with Link */}
         </div>
       </div>

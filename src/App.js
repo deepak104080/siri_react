@@ -31,6 +31,8 @@ import CountryList from './comp/CountryList';
 import CountryDetail from './comp/CountryDetail';
 import Login from './comp/Login';
 import Dashboard from './comp/Dashboard';
+import Country from './hoc/Country';
+import City from './hoc/City';
 
 export const GlobalContext = React.createContext();
 
@@ -80,6 +82,14 @@ function App() {
           <Route path='/countrydetail/:id' element={<CountryDetail />}/>
           <Route path='/dashboard' element={<Dashboard />}/>
           <Route path='/login' element={<Login />}/>
+          
+          <Route path='/apps'>
+            <Route path='app1' element={<CounterFunctional />}/>
+            <Route path='app2' element={<ShowHide />}/>
+            <Route path='app3' element={<Loop />}/>
+          </Route>
+          <Route path='/country' element={<Country />}/>
+          <Route path='/city' element={<City />}/>
 
 
           <Route path='/' element={<Root />}/>
