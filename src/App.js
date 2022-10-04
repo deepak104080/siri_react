@@ -33,6 +33,9 @@ import Login from './comp/Login';
 import Dashboard from './comp/Dashboard';
 import Country from './hoc/Country';
 import City from './hoc/City';
+import Ref_Fn from './ref/Ref_Fn';
+import Ref_Class from './ref/Ref_Class';
+import Ref_Parent from './ref/Ref_Parent';
 
 export const GlobalContext = React.createContext();
 
@@ -90,6 +93,9 @@ function App() {
           </Route>
           <Route path='/country' element={<Country />}/>
           <Route path='/city' element={<City />}/>
+          <Route path='/reffn' element={<Ref_Fn />}/>
+          <Route path='/refclass' element={<Ref_Class />}/>
+          <Route path='/refparent' element={<Ref_Parent />}/>
 
 
           <Route path='/' element={<Root />}/>

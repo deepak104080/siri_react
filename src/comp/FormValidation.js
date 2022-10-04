@@ -26,6 +26,9 @@ const FormValidation = () => {
     const registerFunction = () => {
         console.log('Form Data');
         console.log(formData);
+
+        //add validations here
+        
         //api call to send form data to back end/database/third party
         // fetch('<api url>', {
         //     method: 'POST',

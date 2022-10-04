@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="row bg-warning bg-opacity-50">
       <div className="col-12">
         <div className=''>
-                        <Link to='/home' className="btn btn-primary">Home</Link>
+                        <Link to='/home' id="abc" className="btn btn-primary">Home</Link>
                         <Link to='/about' className="btn btn-secondary">About</Link>
                         <Link to='/root' className="btn btn-success">Root</Link>
                         <Link to='/counterfn' className="btn btn-danger">CounterFunctional</Link>
@@ -25,8 +25,10 @@ const Navbar = () => {
                         <Link to='/context' className="btn btn-warning">Context</Link>
                         <Link to='/countrylist/' className="btn btn-info">Country</Link>
                         <Link to='/login/' className="btn btn-primary">Login</Link>
-                        <Link to='/country/' className="btn btn-primary">Country</Link>
-                        <Link to='/city/' className="btn btn-primary">City</Link>
+                        <Link to='/country/' className="btn btn-secondary">Country</Link>
+                        <Link to='/city/' className="btn btn-success">City</Link>
+                        <Link to='/refclass/' className="btn btn-danger">Ref Class</Link>
+                        <Link to='/refparent/' className="btn btn-warning">Ref Parent</Link>
                         {/* Replace a with Link */}
         </div>
       </div>
