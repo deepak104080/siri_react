@@ -93,6 +93,10 @@ useEffect - Lifecycle
 useContect - Context
 
 
+useMemo
+useCallback
+
+
 useReducer - Redux
 
 

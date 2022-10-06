@@ -36,6 +36,7 @@ import City from './hoc/City';
 import Ref_Fn from './ref/Ref_Fn';
 import Ref_Class from './ref/Ref_Class';
 import Ref_Parent from './ref/Ref_Parent';
+import UseMemo from './hook/UseMemo';
 
 export const GlobalContext = React.createContext();
 
@@ -96,6 +97,7 @@ function App() {
           <Route path='/reffn' element={<Ref_Fn />}/>
           <Route path='/refclass' element={<Ref_Class />}/>
           <Route path='/refparent' element={<Ref_Parent />}/>
+          <Route path='/usememo' element={<UseMemo />}/>
 
 
           <Route path='/' element={<Root />}/>

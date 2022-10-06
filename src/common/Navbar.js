@@ -29,6 +29,7 @@ const Navbar = () => {
                         <Link to='/city/' className="btn btn-success">City</Link>
                         <Link to='/refclass/' className="btn btn-danger">Ref Class</Link>
                         <Link to='/refparent/' className="btn btn-warning">Ref Parent</Link>
+                        <Link to='/usememo/' className="btn btn-warning">UseMemo</Link>
                         {/* Replace a with Link */}
         </div>
       </div>
