@@ -37,6 +37,7 @@ import Ref_Fn from './ref/Ref_Fn';
 import Ref_Class from './ref/Ref_Class';
 import Ref_Parent from './ref/Ref_Parent';
 import UseMemo from './hook/UseMemo';
+import UseCallback from './hook/UseCallback';
 
 export const GlobalContext = React.createContext();
 
@@ -98,6 +99,7 @@ function App() {
           <Route path='/refclass' element={<Ref_Class />}/>
           <Route path='/refparent' element={<Ref_Parent />}/>
           <Route path='/usememo' element={<UseMemo />}/>
+          <Route path='/usecallback' element={<UseCallback />}/>
 
 
           <Route path='/' element={<Root />}/>

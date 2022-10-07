@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { GlobalContext } from '../App';
 
 const Login = () => {
     const [username, setUsername] = useState('');
     const navigate = useNavigate();
+    const localContext = useContext(GlobalContext);
+    const {store, setStore} = localContext;
 
     const usernameFn = (event) => {
         console.log(event.target.value);
@@ -13,6 +16,12 @@ const Login = () => {
     const loginFn = () => {
         //make and api call to check login
         if(username === 'ns123') {
+            //update variable in context
+            setStore({
+                ...store,
+                loginStatus: true,
+                userName: username
+            })
             //navigate dashboard
             navigate('/dashboard', {state : {username: username}});
         }
@@ -36,3 +45,7 @@ const Login = () => {
 }
 
 export default Login
+
+
+// Authorization
+// Authentication

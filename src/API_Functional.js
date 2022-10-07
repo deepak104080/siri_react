@@ -1,7 +1,24 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { GlobalContext } from './App';
 
 const API_Functional = () => {
     const [products, setProducts] = useState([]);
+
+    /*login check */
+    const navigate = useNavigate();
+    const localContext = useContext(GlobalContext);
+    const {store, setStore} = localContext;
+    useEffect(() => {
+        if(store.loginStatus) {
+            //allow to visit the current page
+        }
+        else {
+            navigate('/login');
+        }
+    }, [store])
+    /*login check ends here*/
+
 
     const callApi = async () => {
         let response = await fetch('https://fakestoreapi.com/products').catch(err => console.log(err));
