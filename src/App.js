@@ -38,6 +38,7 @@ import Ref_Class from './ref/Ref_Class';
 import Ref_Parent from './ref/Ref_Parent';
 import UseMemo from './hook/UseMemo';
 import UseCallback from './hook/UseCallback';
+import ProtectedRoute from './ProtectedRoute';
 
 export const GlobalContext = React.createContext();
 
@@ -46,7 +47,8 @@ function App() {
   const initialObj = {
     bgColor: '',
     loginStatus: false,
-    userName: ''
+    userName: '',
+    lastPage: ''
   }
 
   const [store, setStore] = useState(initialObj);
@@ -64,7 +66,6 @@ function App() {
         <Navbar />
         {/* <Sidebar/> */}
         
-        
         <Routes>
           <Route path='/home' element={<Home />}/>
           <Route path='/about' element={<About />}/>
@@ -79,8 +80,16 @@ function App() {
           <Route path='/effectFn' element={<EffectFunctional />}/>
           <Route path='/apifn' element={<API_Functional />}/>
           <Route path='/apiclass' element={<API_Class />}/>
-          <Route path='/usereducer' element={<UseReducer />}/>
-          <Route path='/liftstate' element={<LiftState />}/>
+          <Route path='/usereducer' element={
+            <ProtectedRoute name="usereducer">
+              <UseReducer />
+            </ProtectedRoute>
+          }/>
+          <Route path='/liftstate' element={
+            <ProtectedRoute name="liftstate">
+              <LiftState />
+            </ProtectedRoute>
+          }/>
           <Route path='/propsdrilling' element={<Parent />}/>
           <Route path='/context' element={<ContextParent />}/>
           <Route path='/countrylist' element={<CountryList />}/>

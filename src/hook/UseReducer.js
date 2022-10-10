@@ -50,7 +50,10 @@ const UseReducer = () => {
 
     useEffect(() => {
         console.log(state);
+        console.log('usereducer component hit')
     }, [state])
+
+    
 
     return (
         <div className="row bg-warning bg-opacity-50">

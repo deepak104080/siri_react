@@ -19,17 +19,17 @@ const Navbar = () => {
                         <Link to='/input' className="btn btn-primary">Input</Link>
                         <Link to='/form' className="btn btn-secondary">Form</Link>
                         <Link to='/formvalidation' className="btn btn-success">FormValidation</Link>
+                        <Link to='/classcomp' className="btn btn-danger">ClassComp</Link>
+                        <Link to='/effectfn' className="btn btn-warning">EffectFunctional</Link>
+                        <Link to='/apifn' className="btn btn-info">API_Functional</Link>
+                        <Link to='/apiclass' className="btn btn-primary">API_Class</Link>
+                        <Link to='/usereducer' className="btn btn-secondary">UseReducer</Link>
+                        <Link to='/liftstate' className="btn btn-success">LiftState</Link>
 
 
                         {
                           store.loginStatus && (
                             <>
-                                <Link to='/classcomp' className="btn btn-danger">ClassComp</Link>
-                                <Link to='/effectfn' className="btn btn-warning">EffectFunctional</Link>
-                                <Link to='/apifn' className="btn btn-info">API_Functional</Link>
-                                <Link to='/apiclass' className="btn btn-primary">API_Class</Link>
-                                <Link to='/usereducer' className="btn btn-secondary">UseReducer</Link>
-                                <Link to='/liftstate' className="btn btn-success">LiftState</Link>
                                 <Link to='/propsdrilling' className="btn btn-danger">Props Drilling</Link>
                                 <Link to='/context' className="btn btn-warning">Context</Link>
                                 <Link to='/countrylist/' className="btn btn-info">Country</Link>

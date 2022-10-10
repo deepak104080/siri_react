@@ -14,6 +14,8 @@ const API_Functional = () => {
             //allow to visit the current page
         }
         else {
+            //update store - lastPage with API_Functional/apifn
+            setStore({...store, lastPage: window.location.href.split('/').pop()}) //update approach in case of nested route
             navigate('/login');
         }
     }, [store])

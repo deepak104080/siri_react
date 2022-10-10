@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { GlobalContext } from '../App';
 
 const Login = () => {
-    const [username, setUsername] = useState('');
+    const [username, setUsername] = useState('ns123');
     const navigate = useNavigate();
     const localContext = useContext(GlobalContext);
     const {store, setStore} = localContext;
@@ -23,7 +23,15 @@ const Login = () => {
                 userName: username
             })
             //navigate dashboard
-            navigate('/dashboard', {state : {username: username}});
+            //if store - lastpage is not blank  -----> navigate to store - lastpage
+            console.log('store.lastPage', store.lastPage);
+            if(store.lastPage !== '') {
+                console.log('store.lastPage inside', store.lastPage);
+                navigate('/'+store.lastPage);
+            }
+            else {
+                navigate('/dashboard', {state : {username: username}});
+            }
         }
         else {
             //show error
