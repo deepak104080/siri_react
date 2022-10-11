@@ -25,6 +25,7 @@ const Navbar = () => {
                         <Link to='/apiclass' className="btn btn-primary">API_Class</Link>
                         <Link to='/usereducer' className="btn btn-secondary">UseReducer</Link>
                         <Link to='/liftstate' className="btn btn-success">LiftState</Link>
+                        <Link to='/register' className="btn btn-success">Register</Link>
 
 
                         {

@@ -39,6 +39,7 @@ import Ref_Parent from './ref/Ref_Parent';
 import UseMemo from './hook/UseMemo';
 import UseCallback from './hook/UseCallback';
 import ProtectedRoute from './ProtectedRoute';
+import Register from './comp/Register';
 
 export const GlobalContext = React.createContext();
 
@@ -96,6 +97,7 @@ function App() {
           <Route path='/countrydetail/:id' element={<CountryDetail />}/>
           <Route path='/dashboard' element={<Dashboard />}/>
           <Route path='/login' element={<Login />}/>
+          <Route path='/register' element={<Register />}/>
           
           <Route path='/apps'>
             <Route path='app1' element={<CounterFunctional />}/>
