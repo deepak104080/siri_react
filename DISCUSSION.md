@@ -134,3 +134,48 @@ Prototype
 
 Assignments Git Links - 
 Holiday List - https://github.com/deepak104080/Holiday-List-React---Updating-State-That-Depends-On-The-Previous-State-Renderin---c87d6iyiq92i
+
+
+
+
+
+
+space on server
+1TB hdd - offline
+
+
+1tb, 4gb ram
+
+
+
+Cloud - Very huge shared server - aws, google cloud, ibm cloud, microsoft azure
+cloud - drive, mediafire, adobe creative cloud, oneplus cloud, mi cloud, apple cloud
+
+hosting service prvider - godaddy, hostgator, digitalocean
+
+free hosting service provider - netlify, heroku, vercel
+
+
+
+
+------------------------------------------------------------------
+
+
+1) social media app - like facebook
+2) streaming website - netflix, hotstar
+3) e-commerce - myntra
+4) hospital management - list of doctors, tests, departments, opd registration, admit facility, medical test booking, patient history
+5) Blog - w3schools, geek4geek, blog
+6) e-learning/learning management app - course, assignments, lectures, submissions, reviews
+7) online exam/quiz system - mcq
+8) hotel management system - room entry, registration, food managent, hotel facilities 
+9) library management
+10) billing software
+11) event management
+12) expense management - splitwise/khaatbook/okcred
+13) school/college management software - fee, syllabus, schedule
+14) movie booking site - bookmyshow
+15) bus booking site - redbus
+16) hotel booking - goibibio, makemytrip
+17) trello / jira - task management system
+18) food booking app - zomato, swiggy

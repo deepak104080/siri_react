@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { GlobalContext } from './App';
+import axios from 'axios';
 
 const API_Functional = () => {
     const [products, setProducts] = useState([]);
@@ -22,11 +23,19 @@ const API_Functional = () => {
     /*login check ends here*/
 
 
+    // const callApi = async () => {
+    //     let response = await fetch('https://fakestoreapi.com/products').catch(err => console.log(err));
+    //     let finalData = await response.json();
+    //     console.log(finalData);
+    //     setProducts(finalData);
+    //     //store finalData in state variable
+    // }
+
     const callApi = async () => {
-        let response = await fetch('https://fakestoreapi.com/products').catch(err => console.log(err));
-        let finalData = await response.json();
-        console.log(finalData);
-        setProducts(finalData);
+        let response = await axios.get('https://fakestoreapi.com/products').catch(err => console.log(err));
+        // let finalData = await response.json();
+        console.log(response.data);
+        setProducts(response.data);
         //store finalData in state variable
     }
 
