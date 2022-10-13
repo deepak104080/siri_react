@@ -179,3 +179,35 @@ free hosting service provider - netlify, heroku, vercel
 16) hotel booking - goibibio, makemytrip
 17) trello / jira - task management system
 18) food booking app - zomato, swiggy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------
+
+Redux - 
+
+
+1) store
+2) action (component)
+3) reducer(store)
+
+storing data in redux
+
+
+4) selector
+fetching data from redux
+
+
+customer, bank branch/online app, central unit of bank, store, documentation/database
+
